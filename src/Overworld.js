@@ -1,16 +1,18 @@
 class Overworld extends Phaser.Scene {
     constructor() {
-        super({key:'overworldScene'});
+        super('overworldScene');
     }
 
     preload() {
+        console.log("help");
         this.load.path = './assets/';
         this.load.spritesheet('slime', 'slime.png', { frameWidth: 16, frameHeight: 16 });
         this.load.image('tilesetImage', 'tileset.png');
-        this.load.tilemapTiledJSON('tilemap', 'area01.json');
+        this.load.tilemapTiledJSON('tilemapJSON', 'area01.json');
     }
 
     create() {
+        console.log("help");
         const map = this.add.tilemap('tilemapJSON');
         const tileset = map.addTilesetImage('tileset', 'tilesetImage');
         const bgLayer = map.createLayer('Background', tileset, 0, 0);
@@ -36,6 +38,7 @@ class Overworld extends Phaser.Scene {
     }
 
     update() {
+        console.log("HELLO");
         this.direction = new Phaser.Math.Vector2(0);
         if (this.cursors.left.isDown) {
             this.direction.x = -1;

@@ -1,4 +1,5 @@
 let config = {
+    parent: 'myGame',
     type: Phaser.CANVAS,
     render: {
         pixelArt: true
@@ -10,9 +11,11 @@ let config = {
         arcade: {
             debug: true
         },
-        zoom: 2,
-        scene: [ Overworld ]
-    }
-}
+    },
+    zoom: 2,
+    scene: [ Overworld]
+};
 
 const game = new Phaser.Game(config);
+
+console.log("help");
