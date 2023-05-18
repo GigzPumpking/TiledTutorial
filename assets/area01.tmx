@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <editorsettings>
+  <export target="tilemap01.json" format="json"/>
+ </editorsettings>
  <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="2112" columns="33">
   <image source="tileset.png" trans="ff00ff" width="528" height="1024"/>
  </tileset>
- <layer id="1" name="Tile Layer 1" width="40" height="30">
+ <layer id="1" name="Background" width="40" height="30">
   <data encoding="csv">
 103,109,105,106,105,128,129,129,129,129,107,105,107,105,107,106,106,103,106,110,103,103,110,109,106,128,128,129,128,129,106,110,110,104,154,152,121,153,121,152,
 110,107,106,105,110,109,110,128,129,129,110,107,109,104,104,109,110,107,108,110,105,107,105,110,128,128,129,128,129,105,107,108,106,107,153,121,249,250,251,120,
@@ -37,8 +40,7 @@
 128,392,393,393,394,129,128,129,128,129,128,129,128,129,128,129,128,129,128,129,106,108,103,104,103,107,107,107,105,107,128,129,128,129,106,106,110,110,109,106
 </data>
  </layer>
- <objectgroup id="2" name="Tree Layer"/>
- <layer id="3" name="Tree Layer" width="40" height="30">
+ <layer id="3" name="Tree" width="40" height="30">
   <data encoding="csv">
 793,794,795,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 826,827,828,0,0,0,0,0,0,0,0,0,0,0,0,661,662,663,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
